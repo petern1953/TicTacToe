@@ -1,0 +1,59 @@
+:root {
+    --field-size: 100px;
+}
+body {
+    margin: 0;
+    background-color: rgb(192, 192, 192);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+h1 {
+    display: block;
+    margin: 6rem 0 0;
+    padding: 0;
+    font-size: 48px;
+    text-align: center;
+    line-height: 2em;
+    font-weight: 600;
+}
+
+.main {
+    display: block;
+}
+
+.container {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: rgb(66, 142, 145);
+    width: calc(var(--field-size)*3 + 8px);
+    height: calc(var(--field-size)*3 + 4px);
+    /* margin: calc(50vh-var(--field-size)*1.5-8px) calc(50vw-var(--field-size)*1.5-8px); */
+    margin: auto;
+    top: 200px;
+        flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.field {
+    flex:none;
+    background-color: rgb(13, 84, 87);
+    /* width: calc(var(--field-size)-4px);
+    height: calc(var(--field-size)-4px); */
+    width: 80px;
+    height: 80px;
+}
+
+.footer {
+    display: block;
+}
