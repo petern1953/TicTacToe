@@ -18,7 +18,6 @@ function newGame() {
 }
 
 function checkIf3(mark, thisIndexX, thisIndexY) {
-    // board.some(row => row.every(field => field == mark))
     if (board[thisIndexX].every(field => field == mark)) return true;
     if (board[0][thisIndexY] == board[1][thisIndexY] && board[0][thisIndexY] == board[2][thisIndexY]) return true;
     if ((thisIndexX == thisIndexY) && (board[0][0] == board[1][1]) && (board[0][0] == board[2][2])) return true;
