@@ -48,6 +48,7 @@ function initFields() {
     fields.forEach(function (field) { field.addEventListener('click', nextTurn) });
     message.setAttribute('style', 'visibility: hidden');
     btn.addEventListener('click', newGame);
+    // board.fill(''); a for ciklus helyett
     for (let i = 0; i < 3; i += 1) {
         for (let j = 0; j < 3; j += 1) {
             board[i][j] = '';
